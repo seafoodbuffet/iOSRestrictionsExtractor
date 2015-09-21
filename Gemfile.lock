@@ -1,0 +1,18 @@
+GIT
+  remote: git://github.com/emerose/pbkdf2-ruby
+  revision: f9a337e3559de7e61792f2c761a91ea57d53e095
+  specs:
+    pbkdf2 (0.2.2)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  pbkdf2!
+
+BUNDLED WITH
+   1.10.6
