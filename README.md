@@ -60,10 +60,10 @@ In this case, I've purposely set my restrictions passcode to **0001**. The two b
     okay, let's get crackin
     found the passcode!, it's: 0001
 
-  That's it! Why pay $25 or more for commercial software when you can spend a whole afternoon learning something new?? :-)
+That's it! Why pay $25 or more for commercial software when you can spend a whole afternoon learning something new?? :-)
 
-  ### Thanks
-  Many thanks to the two following pages which provided a lot of insight into this. The second one even provides a web form that you can use to do this process without installing software. I decided to write another version because the web version was rather slow.
+### Thanks
+Many thanks to the two following pages which provided a lot of insight into this. The second one even provides a web form that you can use to do this process without installing software. I decided to write another version because the web version was rather slow.
 
-  * http://1024kb.co.nz/ios-78-passcode-hack/
-  * https://nbalkota.wordpress.com/2014/04/05/recover-your-forgotten-ios-7-restrictions-pin-code/
+* https://nbalkota.wordpress.com/2014/04/05/recover-your-forgotten-ios-7-restrictions-pin-code/
+* http://1024kb.co.nz/ios-78-passcode-hack/
