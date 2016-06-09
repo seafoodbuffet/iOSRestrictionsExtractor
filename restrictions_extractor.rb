@@ -1,7 +1,17 @@
 #!/usr/bin/env ruby
 
-require 'bundler/setup'
-require 'pbkdf2'
+begin
+  require 'bundler/inline'
+rescue LoadError => e
+  $stderr.puts 'Bundler version 1.10 or later is required. Please update your Bundler'
+  raise e
+end
+
+gemfile(true) do
+  source 'https://rubygems.org'
+  gem 'pbkdf2', github: 'emerose/pbkdf2-ruby'
+end
+
 require 'base64'
 
 class RestrictionsPasscodeCracker
@@ -13,6 +23,10 @@ class RestrictionsPasscodeCracker
     i = 0
     while !stop
       try_pass = i.to_s.rjust(4, "0")
+
+      print "#{try_pass}\r"
+      $stdout.flush
+
       pbkdf2 = PBKDF2.new(:password => try_pass, :salt => decoded_salt, :hash_function => :sha1, :key_length => 20, :iterations => 1000)
       str = Base64.encode64(pbkdf2.bin_string).chomp
       if password_key.eql? str
