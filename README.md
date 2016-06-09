@@ -1,13 +1,17 @@
-
-
 iOS Restrictions Passcode Extractor
 ===
 
 ## Usage
----
+
 On unix-like systems, run
 
     restrictions_extractor.rb <RestrictionsPasswordKey> <RestrictionsPasswordSalt>
+
+**Or without checking out the repository, use this one-liner:**
+
+    curl -L https://git.io/voY1p | ruby - <RestrictionsPasswordKey> <RestrictionsPasswordSalt>
+
+_https://git.io/voY1p is a shortlink pointing to the raw script on GitHub_
 
 If you're on windows, you can remove the line
 
@@ -62,7 +66,8 @@ In this case, I've purposely set my restrictions passcode to **0001**. The two b
 
 That's it! Why pay $25 or more for commercial software when you can spend a whole afternoon learning something new?? :-)
 
-### Thanks
+## Thanks
+
 Many thanks to the two following pages which provided a lot of insight into this. The second one even provides a web form that you can use to do this process without installing software. I decided to write another version because the web version was rather slow.
 
 * https://nbalkota.wordpress.com/2014/04/05/recover-your-forgotten-ios-7-restrictions-pin-code/
